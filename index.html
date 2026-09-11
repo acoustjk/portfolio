@@ -29,7 +29,7 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- Custom Style -->
-  <link rel="stylesheet" href="style.css?v=1789114155">
+  <link rel="stylesheet" href="style.css?v=1789114281">
 </head>
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 antialiased min-h-screen selection:bg-blue-500 selection:text-white transition-colors duration-300">
 
@@ -147,18 +147,75 @@
   <section id="skills" class="py-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-10">
-        <h2 class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-2">Tech & Tools</h2>
-        <p class="text-3xl font-bold text-slate-900 dark:text-white">보유 기술 및 전문 소프트웨어</p>
+        <h2 class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-2">Tech & AI Tools</h2>
+        <p class="text-3xl font-bold text-slate-900 dark:text-white">보유 기술 및 전문 소프트웨어 / AI 툴</p>
       </div>
 
-            <!-- Skill Category Filter Tabs -->
+      <!-- Skill Category Filter Tabs -->
       <div class="flex justify-center gap-2 mb-10 overflow-x-auto pb-2">
         <button onclick="filterSkills('all', this)" class="skill-tab-btn px-5 py-2.5 rounded-xl text-xs font-semibold bg-blue-600 text-white shadow-md transition-all">전체보기</button>
         <button onclick="filterSkills('cad_office', this)" class="skill-tab-btn px-5 py-2.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 transition-all">설계 & 오피스 프로그램</button>
         <button onclick="filterSkills('audio_daw', this)" class="skill-tab-btn px-5 py-2.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 transition-all">음향 & DAW 프로그램</button>
+        <button onclick="filterSkills('ai_tools', this)" class="skill-tab-btn px-5 py-2.5 rounded-xl text-xs font-semibold bg-purple-100 dark:bg-purple-900/40 text-purple-600 dark:text-purple-300 transition-all flex items-center gap-1.5">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> AI & 에이전트 도구
+        </button>
       </div>
 
       <div id="skills-container" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+
+      <!-- AI Tools Spotlight Card -->
+      <div class="mt-10 glass-card p-6 md:p-8 rounded-3xl border border-purple-200 dark:border-purple-900/50 bg-gradient-to-r from-purple-50/70 via-blue-50/70 to-cyan-50/70 dark:from-purple-950/40 dark:via-blue-950/40 dark:to-cyan-950/40 shadow-sm">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-purple-600 text-white flex items-center justify-center shadow-lg shadow-purple-600/30">
+              <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white">생성형 AI & 스마트 에이전틱 툴 적극 활용</h3>
+              <p class="text-xs text-purple-600 dark:text-purple-400 font-semibold">최신 AI 도구를 통한 업무 효율성 & 디자인 생산성 극대화</p>
+            </div>
+          </div>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-purple-600 text-white text-xs font-bold rounded-full w-fit">
+            <i data-lucide="zap" class="w-3.5 h-3.5"></i> 워크플로우 생산성 향상
+          </span>
+        </div>
+
+        <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
+          Google Gemini, Antigravity, Canva AI 등 최첨단 생성형 AI 및 스마트 에이전트 툴을 실무 업무 프로세스에 적극 도입하고 있습니다. 자료 분석, 시공/공무 문서 자동화, 디자인 시각화 및 기술 검토 작업에 AI를 융합하여 업무 처리 속도와 완성도를 획기적으로 높입니다.
+        </p>
+
+        <div class="grid sm:grid-cols-3 gap-3">
+          <div class="bg-white/80 dark:bg-slate-900/80 p-4 rounded-2xl border border-purple-100 dark:border-purple-900/40 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-400 flex items-center justify-center">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-900 dark:text-white text-sm">Google Gemini</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400">자료 분석 & 프롬프트</p>
+            </div>
+          </div>
+
+          <div class="bg-white/80 dark:bg-slate-900/80 p-4 rounded-2xl border border-blue-100 dark:border-blue-900/40 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 flex items-center justify-center">
+              <i data-lucide="bot" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-900 dark:text-white text-sm">Antigravity</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400">에이전틱 AI 워크플로우</p>
+            </div>
+          </div>
+
+          <div class="bg-white/80 dark:bg-slate-900/80 p-4 rounded-2xl border border-cyan-100 dark:border-cyan-900/40 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-cyan-100 dark:bg-cyan-900/50 text-cyan-600 dark:text-cyan-400 flex items-center justify-center">
+              <i data-lucide="palette" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-900 dark:text-white text-sm">Canva AI</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400">생성형 디자인 & 시각화</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -308,7 +365,7 @@
   </section>
 
   <!-- JavaScript Scripts -->
-  <script src="portfolio-data.js?v=1789114155"></script>
-  <script src="app.js?v=1789114155"></script>
+  <script src="portfolio-data.js?v=1789114281"></script>
+  <script src="app.js?v=1789114281"></script>
 </body>
 </html>

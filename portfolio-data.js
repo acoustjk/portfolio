@@ -66,6 +66,11 @@ const PORTFOLIO_DATA = {
       { name: "Pro Tools", icon: "sliders", color: "text-indigo-500", tag: "DAW 녹음 & 믹싱 / 실무 활용" },
       { name: "Cubase", icon: "disc", color: "text-rose-500", tag: "음악 제작 & DAW / 실무 활용" },
       { name: "Audacity", icon: "headphones", color: "text-yellow-500", tag: "사운드 편집 / 실무 활용" }
+    ],
+    ai_tools: [
+      { name: "Google Gemini", icon: "sparkles", color: "text-purple-500", tag: "AI 프롬프팅 & 분석 / 적극 활용" },
+      { name: "Antigravity", icon: "bot", color: "text-blue-500", tag: "에이전틱 AI & 자동화 / 적극 활용" },
+      { name: "Canva AI", icon: "palette", color: "text-cyan-500", tag: "생성형 AI 디자인 / 적극 활용" }
     ]
   },
 
