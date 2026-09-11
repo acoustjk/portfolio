@@ -55,17 +55,17 @@ const PORTFOLIO_DATA = {
 
   skills: {
     cad_office: [
-      { name: "AutoCAD", level: 95, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/autocad/autocad-original.svg" },
-      { name: "SketchUp", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sketchup/sketchup-original.svg" },
-      { name: "한글 (HWP)", level: 95, icon: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Hangul_word_processor_logo.svg" },
-      { name: "Excel", level: 95, icon: "https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" },
-      { name: "Access", level: 85, icon: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Microsoft_Office_Access_%282019%E2%80%93present%29.svg" },
-      { name: "PowerPoint", level: 95, icon: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg" }
+      { name: "AutoCAD", icon: "pen-tool", color: "text-red-500", tag: "2D 도면 작성 / 실무 활용" },
+      { name: "SketchUp", icon: "box", color: "text-blue-500", tag: "3D 모델링 / 실무 활용" },
+      { name: "한글 (HWP)", icon: "file-text", color: "text-sky-500", tag: "문서 작성 / 실무 활용" },
+      { name: "Excel", icon: "file-spreadsheet", color: "text-emerald-500", tag: "데이터 / 내역서 / 실무 활용" },
+      { name: "Access", icon: "database", color: "text-purple-500", tag: "DB 관리 / 실무 활용" },
+      { name: "PowerPoint", icon: "presentation", color: "text-amber-500", tag: "제안서 / 발표자료 / 실무 활용" }
     ],
     audio_daw: [
-      { name: "Pro Tools", level: 95, icon: "https://upload.wikimedia.org/wikipedia/commons/9/91/Avid_Pro_Tools_Icon.svg" },
-      { name: "Cubase", level: 95, icon: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Steinberg_Cubase_Logo.svg" },
-      { name: "Audacity", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/audacity/audacity-original.svg" }
+      { name: "Pro Tools", icon: "sliders", color: "text-indigo-500", tag: "DAW 녹음 & 믹싱 / 실무 활용" },
+      { name: "Cubase", icon: "disc", color: "text-rose-500", tag: "음악 제작 & DAW / 실무 활용" },
+      { name: "Audacity", icon: "headphones", color: "text-yellow-500", tag: "사운드 편집 / 실무 활용" }
     ]
   },
 
