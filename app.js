@@ -181,46 +181,41 @@ function renderExperiences() {
   if (!container) return;
 
   container.innerHTML = PORTFOLIO_DATA.experiences.map((exp, idx) => `
-    <div class="relative pl-8 md:pl-0 mb-12 last:mb-0">
-      <div class="md:grid md:grid-cols-2 md:gap-8 items-start">
-        
-        <!-- Left Side: Company & Period -->
-        <div class="md:text-right mb-2 md:mb-0">
-          <span class="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 text-xs font-semibold rounded-full mb-2">${exp.type}</span>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white">${exp.company}</h3>
-          <p class="text-sm font-medium text-slate-600 dark:text-slate-400">${exp.departmentRole}</p>
-          <p class="text-xs text-slate-500 dark:text-slate-500 font-mono mt-1">${exp.period}</p>
-        </div>
-
-        <!-- Center Node Icon -->
-        <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-blue-600 text-white items-center justify-center shadow-lg">
-          <i data-lucide="briefcase" class="w-4 h-4"></i>
-        </div>
-
-        <!-- Right Side: Details & Achievements -->
-        <div class="glass-card p-6 rounded-2xl shadow-sm">
-          <p class="text-slate-700 dark:text-slate-300 text-sm font-medium mb-3">${exp.description}</p>
-          <ul class="space-y-2 mb-4">
-            ${exp.achievements.map(ach => `
-              <li class="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-400">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 mt-0.5 shrink-0"></i>
-                <span>${ach}</span>
-              </li>
-            `).join('')}
-          </ul>
-          <div class="flex flex-wrap gap-1.5">
-            ${exp.techStack.map(tech => `
-              <span class="px-2.5 py-0.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs rounded-md font-mono">${tech}</span>
-            `).join('')}
+    <div class="glass-card p-6 md:p-8 rounded-2xl shadow-sm mb-8 border border-slate-200 dark:border-slate-800">
+      <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 mb-4 border-b border-slate-200 dark:border-slate-800 gap-2">
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 text-xs font-semibold rounded-full">${exp.type}</span>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">${exp.company}</h3>
           </div>
+          <p class="text-sm font-medium text-slate-600 dark:text-slate-400">${exp.departmentRole}</p>
         </div>
+        <div class="text-left md:text-right">
+          <span class="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-mono font-semibold rounded-lg">${exp.period}</span>
+          <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-1">${exp.description}</p>
+        </div>
+      </div>
 
+      <div class="space-y-2 mb-6">
+        ${exp.achievements.map(ach => `
+          <div class="flex items-start gap-2.5 text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 mt-1 shrink-0"></i>
+            <span>${ach}</span>
+          </div>
+        `).join('')}
+      </div>
+
+      <div class="flex flex-wrap gap-2 pt-2">
+        ${exp.techStack.map(tech => `
+          <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold rounded-lg">${tech}</span>
+        `).join('')}
       </div>
     </div>
   `).join('');
 
   initLucide();
 }
+
 
 // 6. Render Projects
 function renderProjects(filter = 'all') {
