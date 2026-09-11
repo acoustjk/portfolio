@@ -1,235 +1,234 @@
 /**
  * Personal Portfolio Data Configuration
- * 사용자의 실제 이력서 스크린샷 기반으로 업데이트된 포트폴리오 데이터입니다.
+ * 이중권 님의 이력서 (PDF) 실제 데이터
  */
 
 const PORTFOLIO_DATA = {
   profile: {
-    name: "개발자",
-    englishName: "Software Engineer",
-    title: "사용자 가치를 창출하는 웹 개발자",
-    shortBio: "안정적이고 확장 가능한 웹 서비스를 개발하는 소프트웨어 엔지니어입니다. 문제 해결 중심의 사고와 효율적인 코드 작성을 위해 끊임없이 배우고 도전합니다.",
+    name: "이중권",
+    englishName: "Joong-kwon Lee",
+    title: "15년+ 경력의 음향 & 시스템 설비 설계·PM 엔지니어",
+    shortBio: "백제예술대학 수석 졸업 및 성주음향, 사운드웍스, 담소리, 에스에스브이를 거치며 방송/AV/CCTV 시스템 설계, 사운드 엔지니어링, 스피커 제품 개발, 특허 및 ICT 인증을 주도해온 15년 11개월 경력의 엔지니어입니다.",
     typedHeadlines: [
-      "사용자 가치를 창출하는 웹 개발자입니다.",
-      "안정적이고 확장 가능한 풀스택 서비스를 개발합니다.",
-      "클린 코드와 체계적인 아키텍처 구축에 집중합니다."
+      "음향 & 시스템 설비 설계·PM 전문가 이중권입니다.",
+      "방송/AV/CCTV 설계부터 현장 PM, 조달 인증까지 총괄합니다.",
+      "15년+ 커리어의 노하우로 소리와 시스템 기술을 완성합니다."
     ],
     avatarUrl: "./user_profile.png",
-    status: "구직중 / 이직 준비중",
-    location: "서울특별시",
-    email: "contact@example.com",
-    phone: "010-0000-0000",
+    status: "재직 중 (에스에스브이 영업지원 차장)",
+    location: "경기 양주시 백석읍 복지리",
+    email: "acoustjk@gmail.com",
+    phone: "010-2678-1830",
     github: "https://github.com/acoustjk",
-    blog: "https://velog.io",
-    linkedin: "https://linkedin.com",
+    blog: "https://blog.naver.com/acoustjk",
+    linkedin: "https://linkedin.com/in/acoustjk",
     stats: {
-      experienceYears: "3년+",
-      projectsCount: "10+",
-      techCount: "12+",
-      commitCount: "1,500+"
+      experienceYears: "15년 11개월",
+      projectsCount: "50+",
+      techCount: "10+",
+      commitCount: "과 수석"
     }
   },
 
   strengths: [
     {
-      icon: "code",
-      title: "웹 애플리케이션 개발",
-      description: "React, Next.js, Node.js 및 다양한 웹 기술을 활용하여 고성능 UI와 안정적인 백엔드 시스템을 설계하고 구현합니다."
+      icon: "volume-2",
+      title: "방송 / AV / CCTV 시스템 설계",
+      description: "전관방송설비, A/V 설비, CCTV 설비 설계 및 견적 작성, 현장 PM 업무, 착/준공 서류 및 공무 작업을 완벽하게 수행합니다."
     },
     {
-      icon: "layers",
-      title: "아키텍처 설계 및 리팩토링",
-      description: "재사용 가능한 컴포넌트 구조와 모듈화된 코드를 통해 시스템 유지보수성과 생산성을 크게 향상시킵니다."
+      icon: "mic",
+      title: "사운드 엔지니어링 & 믹싱",
+      description: "가수/성우/악기 녹음(DAW), 소리보정, 잡음제거, 믹싱, Sound Design(CF, BGM, FX sound), 성우 DB 구축 및 TTS Tuning을 진행했습니다."
     },
     {
-      icon: "users",
-      title: "팀 협업 및 커뮤니케이션",
-      description: "기획, 디자인, 제품 팀과 유기적으로 소통하여 프로젝트 목표 달성 및 요구사항 구현을 주도합니다."
+      icon: "cpu",
+      title: "스피커 제품 개발 & 회로 설계",
+      description: "스피커 유닛 및 인클로져 2D 도면 작성, 제조 사양서 작성, 스피커 네트워크 회로 설계, 생산 지그 제작 및 ERP 등록 경험을 보유하고 있습니다."
     },
     {
-      icon: "zap",
-      title: "성능 최적화 및 문제 해결",
-      description: "웹 로딩 성능 최적화, 렌더링 병목 현상 개선 및 실시간 데이터 처리 문제 해결에 강점이 있습니다."
+      icon: "file-check",
+      title: "조달청 우수인증 & 특허 출원",
+      description: "ICT 융합 품질인증, Q-MARK 인증 획득 및 직접 아이디어를 낸 특허 1건 명세서 작성부터 등록까지 주도하여 성과를 냈습니다."
     }
   ],
 
   skills: {
-    frontend: [
-      { name: "JavaScript (ES6+)", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-      { name: "TypeScript", level: 85, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-      { name: "React.js", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-      { name: "Next.js", level: 80, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
-      { name: "HTML5 / CSS3", level: 95, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-      { name: "Tailwind CSS", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
-      { name: "Redux / Zustand", level: 85, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" }
+    engineering: [
+      { name: "AutoCAD (2D 도면 작성)", level: 95, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/autocad/autocad-original.svg" },
+      { name: "SketchUp (3D 모델링)", level: 85, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sketchup/sketchup-original.svg" },
+      { name: "방송 / AV / CCTV 설비 설계", level: 95, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" },
+      { name: "현장 PM & 시공 관리", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" }
     ],
-    backend: [
-      { name: "Node.js", level: 85, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-      { name: "Express.js", level: 85, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
-      { name: "Python / FastAPI", level: 75, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-      { name: "RESTful API", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" }
-    ],
-    database: [
-      { name: "MySQL", level: 80, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
-      { name: "PostgreSQL", level: 75, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
-      { name: "MongoDB", level: 80, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-      { name: "Redis", level: 70, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" }
+    sound: [
+      { name: "DAW 기반 녹음 (Recording)", level: 95, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" },
+      { name: "Sound Edit & Mixing (믹싱/보정)", level: 95, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/audacity/audacity-original.svg" },
+      { name: "Sound Design (BGM/FX sound)", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/music/music-original.svg" },
+      { name: "TTS Tuning & 음성 DB 구축", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" }
     ],
     tools: [
-      { name: "Git / GitHub", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-      { name: "Docker", level: 70, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-      { name: "AWS", level: 75, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
-      { name: "Figma", level: 80, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
-      { name: "Jira / Notion", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" }
+      { name: "MS Excel / PowerPoint", level: 95, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" },
+      { name: "조달 입찰 & 계약 추적", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" },
+      { name: "ERP System & 공무 작업", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" }
     ]
   },
 
   experiences: [
     {
-      company: "주요 서비스 개발사 A",
-      departmentRole: "개발팀 / 주임 개발자",
-      period: "2022.03 ~ 2024.03 (2년 1개월)",
+      company: "에스에스브이",
+      departmentRole: "영업지원 차장",
+      period: "2023.03 ~ 재직 중",
       type: "정규직",
-      description: "웹 서비스 프론트엔드 및 API 개발 총괄",
+      description: "CCTV, 방송/AV 정보통신 설비 현장 PM, 설계 및 견적, 자재 발주 관리",
       achievements: [
-        "핵심 서비스 UI 컴포넌트 모듈화로 전사 개발 공수 35% 감소",
-        "웹 로딩 및 랜더링 성능 최적화로 사용자 이탈률 20% 감소",
-        "실시간 알림 및 상태 연동 기능 구현",
-        "RESTful API 규격 설계 및 백엔드 서비스 연동",
-        "신규 서비스 기능 기획 검토 및 프로젝트 요구사항 정의",
-        "코드 리뷰 프로세스 도입 및 프론트엔드 코드 품질 향상",
-        "단위 테스트 및 통합 테스트 환경 구축"
+        "방송/AV 설비 설계 및 견적 작성, CCTV 설비 설계 및 견적 작성",
+        "방범 카메라 위주 공원, 산책로 CCTV 현장 PM 지휘, 현장 조사 및 유관 업체 미팅",
+        "현장 착/준공 관련 서류 제작 및 공무 작업 진행",
+        "시공 관련 자재 발주 및 구매, 감리/감독관 협의를 통한 설계 변경 및 수주 수익성 극대화",
+        "영상감시장치 공장등록 및 직접생산증명 등 기틀 기반 업무 총괄"
       ],
-      techStack: ["React", "TypeScript", "Node.js", "Express", "Tailwind CSS", "MySQL", "Git"]
+      techStack: ["CCTV 설계", "AV 설비", "현장 PM", "AutoCAD", "공무 작업", "조달 발주"]
     },
     {
-      company: "IT 솔루션 전문 기업 B",
-      departmentRole: "서비스개발팀 / 개발자",
-      period: "2021.05 ~ 2022.01 (9개월)",
+      company: "담소리",
+      departmentRole: "시스템사업부 차장",
+      period: "2016.06 ~ 2023.02 (6년 9개월)",
       type: "정규직",
-      description: "고객 맞춤형 웹 플랫폼 개발 및 운영",
+      description: "음향/전관방송/AV/CCTV 설계, 영업 지원, 인증 및 특허 진행",
       achievements: [
-        "고객사 웹 사이트 반응형 레이아웃 15개 이상 구축",
-        "사용자 행동 분석 기반 UI/UX 가동성 개선",
-        "백엔드 데이터 통신 연동 및 오류 예외 처리 구현",
-        "크로스 브라우징 호환성 테스트 및 CSS 이슈 해결",
-        "운영 이슈 트래킹 및 즉각적인 핫픽스 전개",
-        "기술 문서화 및 팀 내 아키텍처 가이드 작성"
+        "전관방송설비, A/V 설비, CCTV 설비 설계 검토 및 직접 설계 작성",
+        "입찰 공고, 현상 설계 공모 추적 및 프레젠테이션용 제안서 작성 (영업팀 지원)",
+        "착/준공 서류 제작, 현장 미팅, 자재 발주/구매 및 사용자 교육/플러그인 교육 진행",
+        "ODM/OEM 해외 출장 (대표님/이사님 동행) 및 해외 협력업체 업무 연락 담당",
+        "ICT 융합 품질인증 참여 획득 및 Q-MARK 인증 직접 자문 획득 성공",
+        "직접 낸 아이디어로 명세서 작성부터 주도하여 특허 1건 등록 성과"
       ],
-      techStack: ["JavaScript", "React", "HTML5", "CSS3", "SCSS", "Figma"]
+      techStack: ["전관방송설비", "AV 설비", "AutoCAD", "제안서 작성", "Q-MARK 인증", "특허 등록"]
     },
     {
-      company: "디지털 서비스사 C",
-      departmentRole: "개발부 / 인턴 개발자",
-      period: "2020.06 ~ 2021.03 (10개월)",
-      type: "인턴/계약직",
-      description: "서비스 퍼블리싱 및 신규 기능 개발 지원",
+      company: "사운드웍스",
+      departmentRole: "제작팀 팀장",
+      period: "2011.06 ~ 2016.05 (5년)",
+      type: "정규직",
+      description: "녹음, 사운드 디자인, 믹싱, 성우 DB 구축 및 Navigation TTS Tuning 총괄",
       achievements: [
-        "신규 웹 페이지 20여 개 퍼블리싱 및 마크업 작업",
-        "공통 UI 버튼 및 모달 레이아웃 라이브러리 제작",
-        "REST API 데이터 바인딩 및 폼 검증 로직 작성",
-        "QA 버그 리포트 대응 및 인터페이스 개선",
-        "Git 기반 버전 관리 및 협업 흐름 준수",
-        "디자인 가이드라인 준수를 위한 UI 검수 작업"
+        "Recording Engineering: 가수, 성우, 악기, Foley 등 DAW 기반 녹음 진행",
+        "Sound edit & Mixing: 소리 보정, 잡음 제거 및 믹싱 작업",
+        "Sound Design: CF, 홍보물 등 BGM 및 FX sound 삽입/믹싱",
+        "Sound Effecting: Game Character Voice design 및 각종 FX sound design",
+        "국가 연구기관 협업: 음성인식 DB 구축, 성우 DB 구축, 유럽 17개국 및 아랍권 Navigation System TTS Tuning"
       ],
-      techStack: ["JavaScript", "HTML5", "CSS3", "Git", "Figma"]
+      techStack: ["DAW 녹음", "Sound Design", "Mixing", "TTS Tuning", "Foley", "팀장"]
     },
     {
-      company: "테크 스타트업 D",
-      departmentRole: "웹개발팀 / 개발 지원",
-      period: "2019.09 ~ 2020.03 (7개월)",
-      type: "계약직",
-      description: "초기 프로토타입 개발 및 사이트 유지보수",
+      company: "성주음향",
+      departmentRole: "기술연구소 (산업기능요원 병역특례)",
+      period: "2006.04 ~ 2009.02 (2년 11개월)",
+      type: "병역특례",
+      description: "스피커 유닛, 인클로져 개발 보조 및 회로/도면 설계",
       achievements: [
-        "서비스 MVP 프로토타입 제작 지원",
-        "웹 사이트 콘텐츠 업데이트 및 데이터 정리",
-        "사용자 피드백 기반 간이 기능 추가",
-        "SEO 기본 태그 설정 및 메타데이터 관리",
-        "팀 내부 업무 보조 및 테스트 시나리오 작성"
+        "일반 스피커 유닛 및 인클로져 개발 보조, 개발 스피커 유닛 특성 파악",
+        "스피커 유닛 및 인클로져 부품 도면 (2D) 작성 및 승인 서류 작성",
+        "스피커 네트워크 회로 설계 및 도면 작성, 제조 사양서 작성",
+        "개발 완료 제품 도면/부품 도면 작성 및 ERP system 등록",
+        "생산 관련 지그 개발 및 도면 작성/제작"
       ],
-      techStack: ["HTML5", "CSS3", "JavaScript", "jQuery"]
+      techStack: ["스피커 개발", "네트워크 회로 설계", "2D 도면", "ERP System", "산업기능요원"]
     }
   ],
 
   projects: [
     {
       id: "project-1",
-      title: "스마트 업무 관리 & 협업 플랫폼 (TaskHub)",
-      category: "web",
-      period: "2023.10 ~ 2024.01 (4개월)",
-      role: "프론트엔드 & 백엔드 개발 (팀 프로젝트)",
-      summary: "팀 단위 프로젝트 상태 관리, Kanban 칸반 보드 및 실시간 동시 수정 업무 관리 플랫폼",
-      description: "직관적인 drag-and-drop 칸반 보드 인터페이스와 실시간 채팅/알림 기능을 갖춘 업무 협업 툴입니다. WebSocket을 이용한 상태 동기화 및 캘린더 연동 기능을 개발했습니다.",
-      image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=800&q=80",
+      title: "CCTV 및 전관방송/AV 설비 현장 통합 PM & 설계",
+      category: "engineering",
+      period: "2023.03 ~ 현재",
+      role: "현장 PM 및 수석 설계자 (에스에스브이 / 담소리)",
+      summary: "공원, 산책로 방범 CCTV 및 관공서/빌딩 전관방송·AV 설비 설계, 견적, 시공 PM 및 준공",
+      description: "현장 조사부터 시작하여 AutoCAD 기반 설비 도면 작성, 자재 발주, 유관 업체(전기, 조경) 미팅, 감리 협의, 현장 PM 지휘 및 착/준공 서류 완성을 포함하는 턴키 프로젝트입니다.",
+      image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80",
       highlights: [
-        "HTML5 Drag and Drop API를 활용한 무단차 칸반 카드 이동 기능 구현",
-        "Socket.io 기반 멀티유저 실시간 상태 업데이트 처리",
-        "JWT 인증 및 Refresh Token 자동 갱신 인터셉터 구축"
+        "설계 변경 수주를 통한 프로젝트별 수익성 최대화 달성",
+        "ICT 융합 품질인증 및 Q-MARK 인증 획득 주도",
+        "특허 출원 및 등록 (독자 아이디어 명세서 작성 및 등록 완료)"
       ],
-      techStack: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Socket.io", "MongoDB"],
-      githubUrl: "https://github.com/acoustjk/portfolio",
-      demoUrl: "https://acoustjk.github.io/portfolio/"
+      techStack: ["CCTV 설계", "AV 설비", "AutoCAD", "현장 PM", "조달 입찰"],
+      githubUrl: "",
+      demoUrl: ""
     },
     {
       id: "project-2",
-      title: "AI 기반 데일리 커스텀 뉴스 큐레이션 (NewsFeed)",
-      category: "web",
-      period: "2023.05 ~ 2023.08 (3개월)",
-      role: "풀스택 개발 (개인 프로젝트)",
-      summary: "사용자 관심 키워드 기반 AI 뉴스 요약 및 개별 추천 아티클 서비스",
-      description: "OpenAI API를 연동하여 기사 원문을 3줄 요약하고, 카테고리별 뉴스를 크롤링하여 사용자에게 맞춤 추천하는 서비스입니다.",
-      image: "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=800&q=80",
+      title: "글로벌 내비게이션 TTS Tuning & 음성 DB 구축",
+      category: "sound",
+      period: "2011.06 ~ 2016.05",
+      role: "제작팀 팀장 (사운드웍스)",
+      summary: "유럽 17개국 및 아랍권 내비게이션 시스템 TTS 음성 튜닝 및 성우 DB 구축",
+      description: "국가 연구기관 및 사기업 협업 프로젝트로, 음성 합성 엔진 및 음성 인식 연구용 DB 구축을 위한 성우 녹음, Sound Edit, TTS Tuning 업무를 관장했습니다.",
+      image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=800&q=80",
       highlights: [
-        "Python BeautifulSoup / Selenium 기반 매일 500개 뉴스 기사 자동 수집 파이프라인 구축",
-        "OpenAI GPT-3.5 API 연동으로 3줄 자동 요약 및 주요 키워드 태깅",
-        "Next.js App Router & SSR 적용으로 구글 SEO 검색 노출 최적화"
+        "유럽 17개국 및 아랍권 Navigation TTS 음성 튜닝 총괄",
+        "CF, 게임 캐릭터 보이스, BGM 및 FX 사운드 디렉팅",
+        "DAW 기반 멀티트랙 믹싱 및 노이즈 보정 프로세스 정립"
       ],
-      techStack: ["Next.js", "React", "Python", "FastAPI", "OpenAI API", "PostgreSQL"],
-      githubUrl: "https://github.com/acoustjk/portfolio",
-      demoUrl: "https://acoustjk.github.io/portfolio/"
+      techStack: ["DAW", "Sound Design", "TTS Tuning", "음성 DB", "Studio Recording"],
+      githubUrl: "",
+      demoUrl: ""
     },
     {
       id: "project-3",
-      title: "개발자 스터디 및 프로젝트 모임 매칭 웹 (DevMatch)",
-      category: "web",
-      period: "2022.11 ~ 2023.02 (3개월)",
-      role: "프론트엔드 개발 리드 (팀 프로젝트)",
-      summary: "기술 스택 및 지역 기반 스터디원 모집 및 포트폴리오 리뷰 사이트",
-      description: "개발자들이 스택별 스터디 그룹을 생성하고 참가 신청을 관리할 수 있는 모임 매칭 웹플랫폼입니다.",
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
+      title: "하이엔드 스피커 유닛 & 인클로져 부품 개발",
+      category: "hardware",
+      period: "2006.04 ~ 2009.02",
+      role: "기술연구소 엔지니어 (성주음향)",
+      summary: "스피커 유닛 특성 분석, 회로 설계, 2D 도면 제작 및 제조 사양서 작성",
+      description: "산업기능요원으로 재직하며 스피커 네트워크 회로 설계, 2D 캐드 도면 작성, 생산용 지그 개발 및 ERP 시스템 등록을 전담했습니다.",
+      image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80",
       highlights: [
-        "카카오 지도 API 연동으로 오프라인 모임 장소 검색 및 마커 표시",
-        "무한 스크롤(Intersection Observer) 적용으로 모집글 목록 경험 개선",
-        "Zustand 전역 상태 관리를 통한 스택 필터 및 검색 기능 구현"
+        "스피커 유닛 및 인클로져 2D 도면 및 승인서류 작성",
+        "네트워크 회로 설계 및 생산 지그 제작",
+        "ERP 시스템 등록 및 제조 사양서 표준화"
       ],
-      techStack: ["React", "JavaScript", "Zustand", "Tailwind CSS", "Express", "MySQL"],
-      githubUrl: "https://github.com/acoustjk/portfolio",
-      demoUrl: "https://acoustjk.github.io/portfolio/"
+      techStack: ["스피커 설계", "회로 설계", "AutoCAD 2D", "ERP", "지그 제작"],
+      githubUrl: "",
+      demoUrl: ""
     }
   ],
 
   education: [
     {
-      school: "4년제 대학교",
-      degree: "컴퓨터공학과 / 학사 졸업",
-      period: "2018.03 ~ 2022.02",
-      gpa: "3.8 / 4.5",
-      details: "컴퓨터공학 전공 (자료구조, 알고리즘, 소프트웨어 공학, 데이터베이스 수강)"
+      school: "백제예술대학",
+      degree: "실용음악계열 Record Engineering 전공 (과 수석 졸업)",
+      period: "2005.03 ~ 2011.02 졸업",
+      gpa: "4.17 / 4.5",
+      details: "레코드 엔지니어링 전공, 4학기 내내 장학금 수여, 과 수석 졸업"
+    },
+    {
+      school: "의정부고등학교",
+      degree: "졸업",
+      period: "2004년 졸업",
+      gpa: "",
+      details: "의정부고등학교 인문계 졸업"
     }
   ],
 
   certificates: [
     {
-      name: "정보처리기사",
+      name: "전자기기기능사",
       issuer: "한국산업인력공단",
-      date: "2023.05",
+      date: "2006.04",
       badge: "자격증"
     },
     {
-      name: "SQLD (SQL 개발자)",
-      issuer: "한국데이터산업진흥원",
-      date: "2022.10",
+      name: "1종보통운전면허",
+      issuer: "도로교통공단",
+      date: "2004.01",
       badge: "자격증"
+    },
+    {
+      name: "G-telp Lv.2 78점",
+      issuer: "국제테스트연구원",
+      date: "2021.01",
+      badge: "어학"
     }
   ]
 };
