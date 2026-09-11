@@ -163,7 +163,7 @@ function renderSkills(category = 'all') {
 
   container.innerHTML = items.map(skill => `
     <div class="glass-card p-4 rounded-xl shadow-sm flex items-center gap-4 hover:border-blue-500 transition-all duration-300">
-      <img src="${skill.icon}" alt="${skill.name}" class="w-9 h-9 object-contain" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg'">
+      <img src="${skill.icon}" alt="${skill.name}" class="w-9 h-9 object-contain" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/file-text.svg'">
       <div class="flex-1">
         <div class="flex justify-between items-center mb-1">
           <span class="font-semibold text-slate-800 dark:text-slate-200 text-sm">${skill.name}</span>

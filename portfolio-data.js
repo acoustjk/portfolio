@@ -57,14 +57,14 @@ const PORTFOLIO_DATA = {
     cad_office: [
       { name: "AutoCAD", level: 95, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/autocad/autocad-original.svg" },
       { name: "SketchUp", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sketchup/sketchup-original.svg" },
-      { name: "한글 (HWP)", level: 95, icon: "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/file-text.svg" },
-      { name: "Excel", level: 95, icon: "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/file-spreadsheet.svg" },
-      { name: "Access", level: 85, icon: "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/database.svg" },
-      { name: "PowerPoint", level: 95, icon: "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/presentation.svg" }
+      { name: "한글 (HWP)", level: 95, icon: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Hangul_word_processor_logo.svg" },
+      { name: "Excel", level: 95, icon: "https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" },
+      { name: "Access", level: 85, icon: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Microsoft_Office_Access_%282019%E2%80%93present%29.svg" },
+      { name: "PowerPoint", level: 95, icon: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg" }
     ],
     audio_daw: [
-      { name: "Pro Tools", level: 95, icon: "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/sliders.svg" },
-      { name: "Cubase", level: 95, icon: "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/music.svg" },
+      { name: "Pro Tools", level: 95, icon: "https://upload.wikimedia.org/wikipedia/commons/9/91/Avid_Pro_Tools_Icon.svg" },
+      { name: "Cubase", level: 95, icon: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Steinberg_Cubase_Logo.svg" },
       { name: "Audacity", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/audacity/audacity-original.svg" }
     ]
   },
