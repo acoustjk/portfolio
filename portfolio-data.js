@@ -54,22 +54,18 @@ const PORTFOLIO_DATA = {
   ],
 
   skills: {
-    engineering: [
-      { name: "AutoCAD (2D 도면 작성)", level: 95, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/autocad/autocad-original.svg" },
-      { name: "SketchUp (3D 모델링)", level: 85, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sketchup/sketchup-original.svg" },
-      { name: "전관방송 / AV / CCTV 설비 설계", level: 95, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" },
-      { name: "현장 PM & 시공/공무 관리", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" }
+    cad_office: [
+      { name: "AutoCAD", level: 95, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/autocad/autocad-original.svg" },
+      { name: "SketchUp", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sketchup/sketchup-original.svg" },
+      { name: "한글 (HWP)", level: 95, icon: "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/file-text.svg" },
+      { name: "Excel", level: 95, icon: "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/file-spreadsheet.svg" },
+      { name: "Access", level: 85, icon: "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/database.svg" },
+      { name: "PowerPoint", level: 95, icon: "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/presentation.svg" }
     ],
-    sound: [
-      { name: "DAW 기반 녹음 (Recording)", level: 95, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" },
-      { name: "Sound Edit & Mixing (보정/믹싱)", level: 95, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/audacity/audacity-original.svg" },
-      { name: "Sound Design (BGM / FX sound)", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/music/music-original.svg" },
-      { name: "TTS Tuning & 음성 DB 구축", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" }
-    ],
-    tools: [
-      { name: "MS Excel / PowerPoint", level: 95, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" },
-      { name: "조달 입찰 & 통신 계약 추적", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" },
-      { name: "ERP System 등록 & 공무 작업", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" }
+    audio_daw: [
+      { name: "Pro Tools", level: 95, icon: "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/sliders.svg" },
+      { name: "Cubase", level: 95, icon: "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/music.svg" },
+      { name: "Audacity", level: 90, icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/audacity/audacity-original.svg" }
     ]
   },
 
