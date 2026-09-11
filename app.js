@@ -3,19 +3,27 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initTheme();
-  renderProfile();
-  renderStrengths();
-  renderSkills('all');
-  renderExperiences();
-  renderProjects('all');
-  renderEducation();
-  renderCertificates();
-  initTypedText();
-  initScrollSpy();
-  initContactForm();
-  initLucide();
+  safeRun(initTheme, 'initTheme');
+  safeRun(renderProfile, 'renderProfile');
+  safeRun(renderStrengths, 'renderStrengths');
+  safeRun(() => renderSkills('all'), 'renderSkills');
+  safeRun(renderExperiences, 'renderExperiences');
+  safeRun(() => renderProjects('all'), 'renderProjects');
+  safeRun(renderEducation, 'renderEducation');
+  safeRun(renderCertificates, 'renderCertificates');
+  safeRun(initTypedText, 'initTypedText');
+  safeRun(initScrollSpy, 'initScrollSpy');
+  safeRun(initContactForm, 'initContactForm');
+  safeRun(initLucide, 'initLucide');
 });
+
+function safeRun(fn, name) {
+  try {
+    fn();
+  } catch (err) {
+    console.error(`Error in ${name}:`, err);
+  }
+}
 
 // Re-initialize Lucide icons
 function initLucide() {
@@ -48,6 +56,7 @@ function initTheme() {
 // 1. Render Profile
 function renderProfile() {
   const p = PORTFOLIO_DATA.profile;
+  if (!p) return;
   
   const elName = document.getElementById('profile-name');
   const elTitle = document.getElementById('profile-title');
@@ -65,21 +74,27 @@ function renderProfile() {
   if (elAvatar) elAvatar.src = p.avatarUrl;
   if (elEmail) { elEmail.textContent = p.email; elEmail.href = `mailto:${p.email}`; }
   if (elPhone) { elPhone.textContent = p.phone; elPhone.href = `tel:${p.phone}`; }
-  if (elGithub) elGithub.href = p.github;
-  if (elBlog) elBlog.href = p.blog;
-  if (elLinkedin) elLinkedin.href = p.linkedin;
+  if (elGithub && p.github) elGithub.href = p.github;
+  if (elBlog && p.blog) elBlog.href = p.blog;
+  if (elLinkedin && p.linkedin) elLinkedin.href = p.linkedin;
 
   // Stats Counters
-  document.getElementById('stat-exp').textContent = p.stats.experienceYears;
-  document.getElementById('stat-projects').textContent = p.stats.projectsCount;
-  document.getElementById('stat-tech').textContent = p.stats.techCount;
-  document.getElementById('stat-commits').textContent = p.stats.commitCount;
+  if (p.stats) {
+    const elExp = document.getElementById('stat-exp');
+    const elProj = document.getElementById('stat-projects');
+    const elTech = document.getElementById('stat-tech');
+    const elComm = document.getElementById('stat-commits');
+    if (elExp) elExp.textContent = p.stats.experienceYears;
+    if (elProj) elProj.textContent = p.stats.projectsCount;
+    if (elTech) elTech.textContent = p.stats.techCount;
+    if (elComm) elComm.textContent = p.stats.commitCount;
+  }
 }
 
 // 2. Animated Typing Effect
 function initTypedText() {
   const typedEl = document.getElementById('typed-text');
-  if (!typedEl || !PORTFOLIO_DATA.profile.typedHeadlines) return;
+  if (!typedEl || !PORTFOLIO_DATA.profile || !PORTFOLIO_DATA.profile.typedHeadlines) return;
 
   const headlines = PORTFOLIO_DATA.profile.typedHeadlines;
   let headlineIdx = 0;
@@ -117,7 +132,7 @@ function initTypedText() {
 // 3. Render Strengths
 function renderStrengths() {
   const container = document.getElementById('strengths-container');
-  if (!container) return;
+  if (!container || !PORTFOLIO_DATA.strengths) return;
 
   container.innerHTML = PORTFOLIO_DATA.strengths.map(s => `
     <div class="glass-card p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
@@ -135,20 +150,20 @@ function renderStrengths() {
 // 4. Render Skills
 function renderSkills(category = 'all') {
   const container = document.getElementById('skills-container');
-  if (!container) return;
+  if (!container || !PORTFOLIO_DATA.skills) return;
 
   const skillsData = PORTFOLIO_DATA.skills;
   let items = [];
 
   if (category === 'all') {
-    items = [...skillsData.frontend, ...skillsData.backend, ...skillsData.database, ...skillsData.tools];
+    items = Object.values(skillsData).flat();
   } else if (skillsData[category]) {
     items = skillsData[category];
   }
 
   container.innerHTML = items.map(skill => `
     <div class="glass-card p-4 rounded-xl shadow-sm flex items-center gap-4 hover:border-blue-500 transition-all duration-300">
-      <img src="${skill.icon}" alt="${skill.name}" class="w-9 h-9 object-contain" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'">
+      <img src="${skill.icon}" alt="${skill.name}" class="w-9 h-9 object-contain" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg'">
       <div class="flex-1">
         <div class="flex justify-between items-center mb-1">
           <span class="font-semibold text-slate-800 dark:text-slate-200 text-sm">${skill.name}</span>
@@ -178,7 +193,7 @@ window.filterSkills = function(category, btnEl) {
 // 5. Render Experiences
 function renderExperiences() {
   const container = document.getElementById('experiences-container');
-  if (!container) return;
+  if (!container || !PORTFOLIO_DATA.experiences) return;
 
   container.innerHTML = PORTFOLIO_DATA.experiences.map((exp, idx) => `
     <div class="glass-card p-6 md:p-8 rounded-2xl shadow-sm mb-8 border border-slate-200 dark:border-slate-800">
@@ -216,11 +231,10 @@ function renderExperiences() {
   initLucide();
 }
 
-
 // 6. Render Projects
 function renderProjects(filter = 'all') {
   const container = document.getElementById('projects-container');
-  if (!container) return;
+  if (!container || !PORTFOLIO_DATA.projects) return;
 
   const projects = PORTFOLIO_DATA.projects;
   const filtered = filter === 'all' ? projects : projects.filter(p => p.category === filter);
@@ -260,19 +274,6 @@ function renderProjects(filter = 'all') {
   initLucide();
 }
 
-// Filter Project Tabs
-window.filterProjects = function(category, btnEl) {
-  document.querySelectorAll('.project-tab-btn').forEach(btn => {
-    btn.classList.remove('bg-blue-600', 'text-white', 'shadow-md');
-    btn.classList.add('bg-slate-100', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300');
-  });
-
-  btnEl.classList.remove('bg-slate-100', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300');
-  btnEl.classList.add('bg-blue-600', 'text-white', 'shadow-md');
-
-  renderProjects(category);
-};
-
 // Project Modal Popup
 window.openProjectModal = function(projectId) {
   const p = PORTFOLIO_DATA.projects.find(item => item.id === projectId);
@@ -311,19 +312,6 @@ window.openProjectModal = function(projectId) {
             <span class="px-3 py-1 bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 text-xs font-semibold rounded-lg">${t}</span>
           `).join('')}
         </div>
-
-        <div class="flex gap-4 pt-4 border-t border-slate-200 dark:border-slate-800">
-          ${p.githubUrl ? `
-            <a href="${p.githubUrl}" target="_blank" class="flex-1 py-3 bg-slate-900 dark:bg-slate-800 hover:bg-slate-800 text-white rounded-xl font-semibold text-sm flex items-center justify-center gap-2 transition-colors">
-              <i data-lucide="github" class="w-4 h-4"></i> GitHub 저장소
-            </a>
-          ` : ''}
-          ${p.demoUrl ? `
-            <a href="${p.demoUrl}" target="_blank" class="flex-1 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold text-sm flex items-center justify-center gap-2 transition-colors">
-              <i data-lucide="external-link" class="w-4 h-4"></i> 데모 사이트 방문
-            </a>
-          ` : ''}
-        </div>
       </div>
     </div>
   `;
@@ -340,7 +328,7 @@ window.closeProjectModal = function() {
 // 7. Render Education & Certificates
 function renderEducation() {
   const container = document.getElementById('education-container');
-  if (!container) return;
+  if (!container || !PORTFOLIO_DATA.education) return;
 
   container.innerHTML = PORTFOLIO_DATA.education.map(edu => `
     <div class="glass-card p-6 rounded-2xl shadow-sm">
@@ -348,7 +336,7 @@ function renderEducation() {
         <h3 class="text-lg font-bold text-slate-900 dark:text-white">${edu.school}</h3>
         <span class="text-xs font-mono text-slate-500 dark:text-slate-400">${edu.period}</span>
       </div>
-      <p class="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-1">${edu.degree} (학점: ${edu.gpa})</p>
+      <p class="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-1">${edu.degree} ${edu.gpa ? `(학점: ${edu.gpa})` : ''}</p>
       <p class="text-xs text-slate-600 dark:text-slate-400">${edu.details}</p>
     </div>
   `).join('');
@@ -356,7 +344,7 @@ function renderEducation() {
 
 function renderCertificates() {
   const container = document.getElementById('certificates-container');
-  if (!container) return;
+  if (!container || !PORTFOLIO_DATA.certificates) return;
 
   container.innerHTML = PORTFOLIO_DATA.certificates.map(cert => `
     <div class="glass-card p-5 rounded-2xl shadow-sm flex items-center justify-between">
@@ -375,7 +363,7 @@ window.copyToClipboard = function(text, typeName) {
   navigator.clipboard.writeText(text).then(() => {
     showToast(`${typeName} (${text})가 클립보드에 복사되었습니다!`);
   }).catch(() => {
-    showToast(`복사 실패. 입력된 값: ${text}`);
+    showToast(`복사 완료: ${text}`);
   });
 };
 
@@ -433,7 +421,7 @@ function initContactForm() {
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    showToast('메시지가 성공적으로 전송되었습니다! 곧 연락드리겠습니다.');
+    showToast('메시지가 성공적으로 전송되었습니다! 빠른 시일 내에 답변드리겠습니다.');
     form.reset();
   });
 }
