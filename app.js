@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   safeRun(renderStrengths, 'renderStrengths');
   safeRun(() => renderSkills('all'), 'renderSkills');
   safeRun(renderExperiences, 'renderExperiences');
-  safeRun(() => renderProjects('all'), 'renderProjects');
+  // safeRun(() => renderProjects('all'), 'renderProjects');
   safeRun(renderEducation, 'renderEducation');
   safeRun(renderCertificates, 'renderCertificates');
   safeRun(initTypedText, 'initTypedText');
