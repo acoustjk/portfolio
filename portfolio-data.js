@@ -55,22 +55,22 @@ const PORTFOLIO_DATA = {
 
   skills: {
     cad_office: [
-      { name: "AutoCAD", icon: "pen-tool", color: "text-red-500", tag: "2D 도면 작성 / 실무 활용" },
-      { name: "SketchUp", icon: "box", color: "text-blue-500", tag: "3D 모델링 / 실무 활용" },
-      { name: "한글 (HWP)", icon: "file-text", color: "text-sky-500", tag: "문서 작성 / 실무 활용" },
-      { name: "Excel", icon: "file-spreadsheet", color: "text-emerald-500", tag: "데이터 / 내역서 / 실무 활용" },
-      { name: "Access", icon: "database", color: "text-purple-500", tag: "DB 관리 / 실무 활용" },
-      { name: "PowerPoint", icon: "presentation", color: "text-amber-500", tag: "제안서 / 발표자료 / 실무 활용" }
+      { name: "AutoCAD", icon: "pen-tool", color: "text-red-500", tag: "2D 도면 작성" },
+      { name: "SketchUp", icon: "box", color: "text-blue-500", tag: "3D 모델링" },
+      { name: "한글 (HWP)", icon: "file-text", color: "text-sky-500", tag: "문서 작성" },
+      { name: "Excel", icon: "file-spreadsheet", color: "text-emerald-500", tag: "데이터 / 내역서" },
+      { name: "Access", icon: "database", color: "text-purple-500", tag: "DB 관리" },
+      { name: "PowerPoint", icon: "presentation", color: "text-amber-500", tag: "제안서 / 발표자료" }
     ],
     audio_daw: [
-      { name: "Pro Tools", icon: "sliders", color: "text-indigo-500", tag: "DAW 녹음 & 믹싱 / 실무 활용" },
-      { name: "Cubase", icon: "disc", color: "text-rose-500", tag: "음악 제작 & DAW / 실무 활용" },
-      { name: "Audacity", icon: "headphones", color: "text-yellow-500", tag: "사운드 편집 / 실무 활용" }
+      { name: "Pro Tools", icon: "sliders", color: "text-indigo-500", tag: "DAW 녹음 & 믹싱" },
+      { name: "Cubase", icon: "disc", color: "text-rose-500", tag: "음악 제작 & DAW" },
+      { name: "Audacity", icon: "headphones", color: "text-yellow-500", tag: "사운드 편집" }
     ],
     ai_tools: [
-      { name: "Google Gemini", icon: "sparkles", color: "text-purple-500", tag: "AI 프롬프팅 & 분석 / 적극 활용" },
-      { name: "Antigravity", icon: "bot", color: "text-blue-500", tag: "에이전틱 AI & 자동화 / 적극 활용" },
-      { name: "Canva AI", icon: "palette", color: "text-cyan-500", tag: "생성형 AI 디자인 / 적극 활용" }
+      { name: "Google Gemini", icon: "sparkles", color: "text-purple-500", tag: "AI 프롬프팅 & 분석" },
+      { name: "Antigravity", icon: "bot", color: "text-blue-500", tag: "에이전틱 AI & 자동화" },
+      { name: "Canva AI", icon: "palette", color: "text-cyan-500", tag: "생성형 AI 디자인" }
     ]
   },
 

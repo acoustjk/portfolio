@@ -162,19 +162,16 @@ function renderSkills(category = 'all') {
   }
 
   container.innerHTML = items.map(skill => `
-    <div class="glass-card p-5 rounded-2xl shadow-sm flex items-center justify-between hover:border-blue-500 transition-all duration-300">
+    <div class="glass-card p-4 sm:p-5 rounded-2xl shadow-sm flex items-center justify-between hover:border-blue-500 transition-all duration-300">
       <div class="flex items-center gap-3.5">
         <div class="w-11 h-11 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center shrink-0">
           <i data-lucide="${skill.icon}" class="w-6 h-6 ${skill.color || 'text-blue-500'}"></i>
         </div>
         <div>
           <h4 class="font-bold text-slate-800 dark:text-slate-100 text-base">${skill.name}</h4>
-          <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">${skill.tag || '실무 활용 가능'}</p>
+          ${skill.tag ? `<p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">${skill.tag}</p>` : ''}
         </div>
       </div>
-      <span class="px-2.5 py-1 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 text-xs font-semibold rounded-lg shrink-0 flex items-center gap-1">
-        <i data-lucide="check" class="w-3.5 h-3.5"></i> 실전 활용
-      </span>
     </div>
   `).join('');
 
