@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" rx="28" fill="#0056b3"/>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 2"/>
+  <path d="M40 40 H80 V80 H40 Z" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <path d="M50 50 H70 V70 H50 Z" fill="#ffffff"/>
+  <text x="60" y="96" font-family="Pretendard, sans-serif" font-weight="900" font-size="11" fill="#ffffff" text-anchor="middle">ICT 폴리텍</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" rx="28" fill="#6b21a8"/>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#e9d5ff" stroke-width="2"/>
+  <path d="M45 42 L60 30 L75 42 L70 75 L60 85 L50 75 Z" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="60" cy="55" r="8" fill="#e9d5ff"/>
+  <text x="60" y="96" font-family="Pretendard, sans-serif" font-weight="900" font-size="11" fill="#ffffff" text-anchor="middle">백제예술대</text>
+</svg>

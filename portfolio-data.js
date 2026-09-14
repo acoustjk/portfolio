@@ -218,7 +218,7 @@ const PORTFOLIO_DATA = {
         "period": "재학 중",
         "gpa": "",
         "details": "ICT 폴리텍대학 AI Software 학과 재학 중 (2학년 2학기)",
-        "icon": "cpu"
+        "logoUrl": "./ict_logo.svg"
     },
     {
         "school": "백제예술대학",
@@ -226,7 +226,7 @@ const PORTFOLIO_DATA = {
         "period": "2005. 03 ~ 2011. 02",
         "gpa": "4.17 / 4.5",
         "details": "레코드 엔지니어링 전공, 4학기 내내 장학금 수여, 과 수석 졸업",
-        "icon": "music"
+        "logoUrl": "./paekche_logo.svg"
     },
     {
         "school": "의정부고등학교",
@@ -234,7 +234,7 @@ const PORTFOLIO_DATA = {
         "period": "2004년",
         "gpa": "",
         "details": "의정부고등학교 인문계 졸업",
-        "icon": "school"
+        "logoUrl": "./ujb_logo.svg"
     }
 ],
   certificates: [

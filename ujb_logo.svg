@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" rx="28" fill="#047857"/>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#a7f3d0" stroke-width="2"/>
+  <path d="M60 35 L82 75 H38 Z" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="60" y="62" font-family="Pretendard, sans-serif" font-weight="900" font-size="14" fill="#ffffff" text-anchor="middle">高</text>
+  <text x="60" y="96" font-family="Pretendard, sans-serif" font-weight="900" font-size="11" fill="#ffffff" text-anchor="middle">의정부고</text>
+</svg>
