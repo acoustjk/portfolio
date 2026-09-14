@@ -5,7 +5,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   safeRun(initTheme, 'initTheme');
   safeRun(renderProfile, 'renderProfile');
-  safeRun(renderStrengths, 'renderStrengths');
+  // safeRun(renderStrengths, 'renderStrengths');
   safeRun(() => renderSkills('all'), 'renderSkills');
   safeRun(renderExperiences, 'renderExperiences');
   // safeRun(() => renderProjects('all'), 'renderProjects');
