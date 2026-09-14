@@ -226,7 +226,7 @@ const PORTFOLIO_DATA = {
         "period": "2005. 03 ~ 2011. 02",
         "gpa": "4.17 / 4.5",
         "details": "레코드 엔지니어링 전공, 4학기 내내 장학금 수여, 과 수석 졸업",
-        "logoUrl": "./paekche_real_logo.png"
+        "logoUrl": "./pj.png"
     },
     {
         "school": "의정부고등학교",
