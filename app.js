@@ -213,12 +213,18 @@ function renderExperiences() {
       </div>
 
       <div class="space-y-2 mb-6">
-        ${exp.achievements.map(ach => `
-          <div class="flex items-start gap-2.5 text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 mt-1 shrink-0"></i>
-            <span>${ach}</span>
-          </div>
-        `).join('')}
+        ${exp.achievements.map(ach => {
+          const isCategoryHeader = /^[0-9]+\.\s+[^0-9\-]+$/.test(ach.trim());
+          if (isCategoryHeader) {
+            return `<div class="font-bold text-slate-900 dark:text-white text-base mt-5 mb-2 border-b border-slate-100 dark:border-slate-800/80 pb-1.5">${ach}</div>`;
+          }
+          return `
+            <div class="flex items-start gap-2.5 text-sm text-slate-700 dark:text-slate-300 leading-relaxed pl-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 mt-1 shrink-0"></i>
+              <span>${ach}</span>
+            </div>
+          `;
+        }).join('')}
       </div>
 
       <div class="flex flex-wrap gap-2 pt-2">
