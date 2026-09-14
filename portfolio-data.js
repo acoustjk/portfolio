@@ -213,21 +213,27 @@ const PORTFOLIO_DATA = {
 
   education: [
     {
-      school: "백제예술대학",
-      degree: "실용음악계열 Record Engineering 전공 (대학 2,3년 / 졸업)",
-      period: "2005. 03 ~ 2011. 02",
-      gpa: "4.17 / 4.5",
-      details: "레코드 엔지니어링 전공, 4학기 내내 장학금 수여, 과 수석 졸업"
+        "school": "ICT 폴리텍대학",
+        "degree": "AI Software 학과 / 재학 중 (2학년 2학기)",
+        "period": "재학 중",
+        "gpa": "",
+        "details": "ICT 폴리텍대학 AI Software 학과 재학 중 (2학년 2학기)"
     },
     {
-      school: "의정부고등학교",
-      degree: "졸업",
-      period: "2004년",
-      gpa: "",
-      details: "의정부고등학교 졸업"
+        "school": "백제예술대학",
+        "degree": "실용음악계열 Record Engineering 전공 (대학 2,3년 / 졸업)",
+        "period": "2005. 03 ~ 2011. 02",
+        "gpa": "4.17 / 4.5",
+        "details": "레코드 엔지니어링 전공, 4학기 내내 장학금 수여, 과 수석 졸업"
+    },
+    {
+        "school": "의정부고등학교",
+        "degree": "졸업",
+        "period": "2004년",
+        "gpa": "",
+        "details": "의정부고등학교 졸업"
     }
-  ],
-
+],
   certificates: [
     {
       name: "전자기기기능사",
