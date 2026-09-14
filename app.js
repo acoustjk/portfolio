@@ -340,9 +340,9 @@ function renderEducation() {
   container.innerHTML = PORTFOLIO_DATA.education.map(edu => `
     <div class="glass-card p-5 sm:p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 hover:border-blue-500 transition-all">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
-        <div class="flex flex-col sm:flex-row sm:items-center gap-3">
-          <div class="h-12 px-3 rounded-xl overflow-hidden shrink-0 border border-slate-200 dark:border-slate-700 bg-white shadow-sm flex items-center justify-center">
-            <img src="${edu.logoUrl}" alt="${edu.school} 공식 로고" class="h-8 max-w-[180px] object-contain">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+          <div class="w-36 h-12 px-2.5 rounded-xl overflow-hidden shrink-0 border border-slate-200 dark:border-slate-700 bg-white shadow-sm flex items-center justify-center">
+            <img src="${edu.logoUrl}" alt="${edu.school} 공식 로고" class="w-full h-full object-contain">
           </div>
           <div>
             <h3 class="text-lg font-bold text-slate-900 dark:text-white">${edu.school}</h3>

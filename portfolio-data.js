@@ -221,8 +221,8 @@ const PORTFOLIO_DATA = {
         "logoUrl": "./ict_real_logo.png"
     },
     {
-        "school": "백제예술대학",
-        "degree": "실용음악계열 Record Engineering 전공 (대학 2,3년 / 졸업)",
+        "school": "백제예술대학교",
+        "degree": "실용음악계열 Record Engineering 전공 (졸업)",
         "period": "2005. 03 ~ 2011. 02",
         "gpa": "4.17 / 4.5",
         "details": "레코드 엔지니어링 전공, 4학기 내내 장학금 수여, 과 수석 졸업",
