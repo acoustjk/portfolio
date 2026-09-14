@@ -338,15 +338,24 @@ function renderEducation() {
   if (!container || !PORTFOLIO_DATA.education) return;
 
   container.innerHTML = PORTFOLIO_DATA.education.map(edu => `
-    <div class="glass-card p-6 rounded-2xl shadow-sm">
-      <div class="flex justify-between items-start mb-2">
-        <h3 class="text-lg font-bold text-slate-900 dark:text-white">${edu.school}</h3>
-        <span class="text-xs font-mono text-slate-500 dark:text-slate-400">${edu.period}</span>
+    <div class="glass-card p-5 sm:p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 hover:border-blue-500 transition-all">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0 shadow-sm">
+            <i data-lucide="${edu.icon || 'graduation-cap'}" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">${edu.school}</h3>
+            <p class="text-xs sm:text-sm font-semibold text-blue-600 dark:text-blue-400">${edu.degree} ${edu.gpa ? `(학점: ${edu.gpa})` : ''}</p>
+          </div>
+        </div>
+        <span class="text-xs font-mono font-semibold px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-lg w-fit">${edu.period}</span>
       </div>
-      <p class="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-1">${edu.degree} ${edu.gpa ? `(학점: ${edu.gpa})` : ''}</p>
-      <p class="text-xs text-slate-600 dark:text-slate-400">${edu.details}</p>
+      <p class="text-xs text-slate-600 dark:text-slate-400 sm:pl-13 leading-relaxed">${edu.details}</p>
     </div>
   `).join('');
+
+  initLucide();
 }
 
 function renderCertificates() {
