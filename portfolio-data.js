@@ -239,24 +239,36 @@ const PORTFOLIO_DATA = {
 ],
   certificates: [
     {
-      name: "전자기기기능사",
-      issuer: "산업인력공단",
-      date: "2006. 04",
-      badge: "자격증"
+        "name": "정보통신기술자 (중급기술자)",
+        "issuer": "한국정보통신공사협회",
+        "date": "보유",
+        "badge": "기술자격"
     },
     {
-      name: "1종보통운전면허",
-      issuer: "도로교통관리공단",
-      date: "2004. 01",
-      badge: "자격증"
+        "name": "사무자동화산업기사",
+        "issuer": "한국산업인력공단",
+        "date": "2025. 06",
+        "badge": "자격증"
     },
     {
-      name: "G-telp Lv.2 78점",
-      issuer: "취득일 : 2021. 01",
-      date: "2021. 01",
-      badge: "어학"
+        "name": "전자기기기능사",
+        "issuer": "한국산업인력공단",
+        "date": "2006. 04",
+        "badge": "자격증"
+    },
+    {
+        "name": "1종보통운전면허",
+        "issuer": "도로교통관리공단",
+        "date": "2004. 01",
+        "badge": "자격증"
+    },
+    {
+        "name": "G-telp Lv.2 78점",
+        "issuer": "한국G-TELP",
+        "date": "2021. 01",
+        "badge": "어학"
     }
-  ]
+]
 };
 
 if (typeof module !== 'undefined' && module.exports) {
