@@ -127,12 +127,12 @@ const PORTFOLIO_DATA = {
       type: "정규직",
       description: "주요직무: 엔지니어, 제작팀장",
       achievements: [
-        "1. Recording Engineering: 가수, 성우, 악기, Foley 등 DAW 기반 녹음",
-        "2. Sound edit & Mixing: 소리보정, 잡음제거 및 믹싱",
-        "3. Sound Design: CF, 홍보물 등 BGM 및 FX sound 삽입, 믹싱",
-        "4. Sound Effecting: Game Character Voice design, 각종 FX sound design",
-        "5. 음성인식 DB 구축, 성우 DB 구축, 유럽 17개국 및 아랍권 Navigation System TTS Tuning"
-      ],
+        "Recording Engineering: 가수, 성우, 악기, Foley 등 DAW 기반 녹음",
+        "Sound edit & Mixing: 소리보정, 잡음제거 및 믹싱",
+        "Sound Design: CF, 홍보물 등 BGM 및 FX sound 삽입, 믹싱",
+        "Sound Effecting: Game Character Voice design, 각종 FX sound design",
+        "음성인식 DB 구축, 성우 DB 구축, 유럽 17개국 및 아랍권 Navigation System TTS Tuning"
+],
       techStack: ["Recording Engineering", "Sound Edit & Mixing", "Sound Design", "Sound Effecting", "TTS Tuning"]
     },
     {
@@ -142,14 +142,14 @@ const PORTFOLIO_DATA = {
       type: "병역특례",
       description: "주요직무: 스피커 개발 보조 (병역특례)",
       achievements: [
-        "1. 산업 기능 요원 (병역특례) 로 재직",
-        "2. 일반 스피커 유닛 및 인클로져 개발 보조",
-        "3. 스피커 유닛 및 인클로져 부품 도면 및 승인 서류 작성",
-        "4. 개발 스피커 유닛 및 인클로져 특성 파악 및 제조 사양서 작성",
-        "5. 스피커 네트워크 회로 설계 및 도면 작성",
-        "6. 개발 완료 제품 도면 (2D) 작성 및 부품 도면 작성",
-        "7. ERP system 등록 및 생산 관련 지그 개발/도면 작성/제작"
-      ],
+        "산업 기능 요원 (병역특례) 로 재직",
+        "일반 스피커 유닛 및 인클로져 개발 보조",
+        "스피커 유닛 및 인클로져 부품 도면 및 승인 서류 작성",
+        "개발 스피커 유닛 및 인클로져 특성 파악 및 제조 사양서 작성",
+        "스피커 네트워크 회로 설계 및 도면 작성",
+        "개발 완료 제품 도면 (2D) 작성 및 부품 도면 작성",
+        "ERP system 등록 및 생산 관련 지그 개발/도면 작성/제작"
+],
       techStack: ["스피커 개발", "인클로져 설계", "회로 설계", "2D 도면", "ERP System", "산업기능요원"]
     }
   ],
