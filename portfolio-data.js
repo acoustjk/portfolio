@@ -241,7 +241,7 @@ const PORTFOLIO_DATA = {
     {
         "name": "정보통신기술자 (중급기술자)",
         "issuer": "한국정보통신공사협회",
-        "date": "보유",
+        "date": "",
         "badge": "기술자격"
     },
     {
@@ -251,7 +251,7 @@ const PORTFOLIO_DATA = {
         "badge": "자격증"
     },
     {
-        "name": "전자기기기능사",
+        "name": "전자기능사",
         "issuer": "한국산업인력공단",
         "date": "2006. 04",
         "badge": "자격증"

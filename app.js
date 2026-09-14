@@ -363,13 +363,13 @@ function renderCertificates() {
   if (!container || !PORTFOLIO_DATA.certificates) return;
 
   container.innerHTML = PORTFOLIO_DATA.certificates.map(cert => `
-    <div class="glass-card p-5 rounded-2xl shadow-sm flex items-center justify-between">
+    <div class="glass-card p-5 rounded-2xl shadow-sm flex items-center justify-between border border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-all">
       <div>
-        <span class="inline-block px-2.5 py-0.5 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 text-xs font-semibold rounded-md mb-1">${cert.badge}</span>
+        <span class="inline-block px-2.5 py-0.5 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 text-xs font-semibold rounded-md mb-1.5">${cert.badge}</span>
         <h4 class="text-base font-bold text-slate-900 dark:text-white">${cert.name}</h4>
         <p class="text-xs text-slate-500 dark:text-slate-400">${cert.issuer}</p>
       </div>
-      <span class="text-xs font-mono text-slate-400 dark:text-slate-500">${cert.date}</span>
+      ${cert.date ? `<span class="text-xs font-mono font-semibold text-slate-500 dark:text-slate-400 shrink-0 ml-2">${cert.date}</span>` : ''}
     </div>
   `).join('');
 }
