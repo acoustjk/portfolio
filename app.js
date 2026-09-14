@@ -340,16 +340,16 @@ function renderEducation() {
   container.innerHTML = PORTFOLIO_DATA.education.map(edu => `
     <div class="glass-card p-5 sm:p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 hover:border-blue-500 transition-all">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
-        <div class="flex items-center gap-3.5">
-          <div class="w-12 h-12 rounded-xl overflow-hidden shrink-0 border border-slate-200 dark:border-slate-700 bg-white shadow-sm flex items-center justify-center p-0.5">
-            <img src="${edu.logoUrl}" alt="${edu.school} 로고" class="w-full h-full object-contain">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+          <div class="h-12 px-3 rounded-xl overflow-hidden shrink-0 border border-slate-200 dark:border-slate-700 bg-white shadow-sm flex items-center justify-center">
+            <img src="${edu.logoUrl}" alt="${edu.school} 공식 로고" class="h-8 max-w-[180px] object-contain">
           </div>
           <div>
-            <h3 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">${edu.school}</h3>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">${edu.school}</h3>
             <p class="text-xs sm:text-sm font-semibold text-blue-600 dark:text-blue-400">${edu.degree} ${edu.gpa ? `(학점: ${edu.gpa})` : ''}</p>
           </div>
         </div>
-        <span class="text-xs font-mono font-semibold px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-lg w-fit">${edu.period}</span>
+        <span class="text-xs font-mono font-semibold px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-lg w-fit shrink-0">${edu.period}</span>
       </div>
       <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">${edu.details}</p>
     </div>
